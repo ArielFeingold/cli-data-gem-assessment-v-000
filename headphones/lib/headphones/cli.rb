@@ -14,7 +14,7 @@ class Headphones::CLI
         puts "1. In-ear"
         puts "2. Over-ear"
         puts "3. On-ear"
-binding.pry
+
         @in_ear = Headphones::Scraper.scrape_in_ear
         @on_ear = "array"
         @over_ear = "array"
