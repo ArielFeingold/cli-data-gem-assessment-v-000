@@ -1,8 +1,6 @@
 require 'pry'
 class Headphones::CLI
 
-  class Headphones::CLI
-
     def call
       list_types
     end
@@ -37,7 +35,7 @@ class Headphones::CLI
               puts "3. On-ear"
           end
         end
-      end
+  
     end
 
     def in_ear_list
