@@ -1,12 +1,13 @@
 require 'pry'
 class Headphones::CLI
 
+  attr_accessor :in_ear, :over_ear, :on_ear
+
     def call
       list_types
     end
 
     def list_types
-      input = nil
 
         puts "Welcome to headphone guide"
         puts "please choose headphone type. To quit type exit"
