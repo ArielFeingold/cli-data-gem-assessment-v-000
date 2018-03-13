@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require './lib/headphones'
+
+Headphones::CLI.new.call
