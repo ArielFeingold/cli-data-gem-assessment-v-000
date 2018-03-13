@@ -16,8 +16,8 @@ class Headphones::CLI
         puts "3. On-ear"
 
         @in_ear = Scraper.new.scrape_in_ear
-        @on_ear = Scraper.scrape_in_ear
-        @over_ear = Scraper.scrape_in_ear
+        @on_ear = Scraper.new.scrape_in_ear
+        @over_ear = Scraper.new.scrape_in_ear
 
         input = nil
 
