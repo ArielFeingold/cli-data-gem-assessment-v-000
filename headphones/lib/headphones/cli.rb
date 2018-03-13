@@ -40,13 +40,10 @@ class Headphones::CLI
               puts "3. On-ear"
           end
         end
-
+binding.pry
     end
 
     def list(array)
-      array = [{"name" => "sony", "description" => "sony description"},
-                      {"name" => "boss", "description" => "boss description"},
-                      {"name" => "beats", "description" => "beats description"}]
       puts "Here are the top In-ear headphones. Type number for more info, to start over type exit"
       array.each.with_index {|h, i| puts "#{i + 1}. #{array[i]["name"]}- #{array[i]["description"]}."}
 
