@@ -15,9 +15,9 @@ class Headphones::CLI
         puts "2. Over-ear"
         puts "3. On-ear"
 
-        @in_ear = Hedphone::Scraper.scrape_in_ear
-        @on_ear = Hedphone::Scraper.scrape_in_ear
-        @over_ear = Hedphone::Scraper.scrape_in_ear
+        @in_ear = Headphone::Scraper.scrape_in_ear
+        @on_ear = Headphone::Scraper.scrape_in_ear
+        @over_ear = Headphone::Scraper.scrape_in_ear
 
         input = nil
 
