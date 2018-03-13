@@ -6,9 +6,9 @@ class Headphones::Scraper
       doc = Nokogiri::HTML(open("https://www.cnet.com/topics/headphones/best-headphones/earbuds/"))
       in_ear_array =[]
       
-binding.pry
+
       doc.css("div.bestListings").each do |card|
-    
+    binding.pry
       card.css(".student-card a").each do |student|
         student_profile_link = "#{student.attr('href')}"
         student_location = student.css('.student-location').text
