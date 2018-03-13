@@ -15,6 +15,10 @@ class Headphones::CLI
         puts "2. Over-ear"
         puts "3. On-ear"
 
+        @in_ear = Scraper.scrape_in_ear
+        @on_ear = Scraper.scrape_in_ear
+        @over_ear = Scraper.scrape_in_ear
+
         input = nil
 
         while input != "exit" || !input.to_i.between?(1,3)
@@ -25,7 +29,7 @@ class Headphones::CLI
             when "2"
               list(@over_ear)
             when "3"
-              list(@in_ear)
+              list(@on_ear)
             when "exit"
               puts "goodby"
               exit
