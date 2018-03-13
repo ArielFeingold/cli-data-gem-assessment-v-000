@@ -41,6 +41,7 @@ class Headphones::CLI
           end
         end
 binding.pry
+
     end
 
     def list(array)
