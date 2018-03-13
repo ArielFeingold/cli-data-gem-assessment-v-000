@@ -14,6 +14,7 @@ class Headphones::Scraper
         h_rating = headphone[1].css(".subrating").attribute("aria-lable").value
 
         in_ear_array << {name: h_name, price: h_price, url: h_url, rating: h_rating}
+      end
 
 
       doc.css("div.bestListings").each do |card|
