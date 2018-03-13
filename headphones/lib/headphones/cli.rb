@@ -26,6 +26,7 @@ class Headphones::CLI
           case input
           when "1"
               list(@in_ear)
+              binding.pry
             when "2"
               list(@over_ear)
             when "3"
@@ -40,7 +41,7 @@ class Headphones::CLI
               puts "3. On-ear"
           end
         end
-binding.pry
+
 
     end
 
