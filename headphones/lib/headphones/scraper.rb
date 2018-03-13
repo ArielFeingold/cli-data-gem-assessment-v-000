@@ -15,6 +15,7 @@ class Headphones::Scraper
 
         in_ear_array << {name: h_name, price: h_price, url: h_url, rating: h_rating}
       end
+      in_ear_array
     end
 
     def self.scrape_on_ear
