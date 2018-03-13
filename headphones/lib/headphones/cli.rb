@@ -26,7 +26,6 @@ class Headphones::CLI
           case input
           when "1"
               list(@in_ear)
-              binding.pry
             when "2"
               list(@over_ear)
             when "3"
@@ -46,6 +45,7 @@ class Headphones::CLI
     end
 
     def list(array)
+      binding.pry
       puts "Here are the top In-ear headphones. Type number for more info, to start over type exit"
       array.each.with_index {|h, i| puts "#{i + 1}. #{array[i]["name"]}- #{array[i]["description"]}."}
 
