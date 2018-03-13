@@ -20,11 +20,11 @@ class Headphones::CLI
           input = gets.strip
           case input
           when "1"
-              in_ear_list
+              list(array)
             when "2"
-              puts "more details on headphone 2"
+              list(array)
             when "3"
-              puts "more details on headphone 3"
+              list(array)
             when "exit"
               puts "goodby"
               exit
@@ -35,10 +35,10 @@ class Headphones::CLI
               puts "3. On-ear"
           end
         end
-  
+
     end
 
-    def in_ear_list
+    def list(array)
       array = [{"name" => "sony", "description" => "sony description"},
                       {"name" => "boss", "description" => "boss description"},
                       {"name" => "beats", "description" => "beats description"}]
