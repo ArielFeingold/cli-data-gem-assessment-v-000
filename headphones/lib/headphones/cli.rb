@@ -20,11 +20,11 @@ class Headphones::CLI
           input = gets.strip
           case input
           when "1"
-              list(array)
+              list(@in_ear)
             when "2"
-              list(array)
+              list(@over_ear)
             when "3"
-              list(array)
+              list(@in_ear)
             when "exit"
               puts "goodby"
               exit
