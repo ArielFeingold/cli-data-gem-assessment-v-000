@@ -17,8 +17,7 @@ class Headphones::CLI
 
         @in_ear = Headphone::Scraper.scrape_in_ear
         @on_ear = "array"
-        @over_ear = "array""
-
+        @over_ear = "array"
         input = nil
 
         while input != "exit" || !input.to_i.between?(1,3)
