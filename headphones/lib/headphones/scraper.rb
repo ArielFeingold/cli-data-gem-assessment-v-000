@@ -15,17 +15,6 @@ class Headphones::Scraper
 
         in_ear_array << {name: h_name, price: h_price, url: h_url, rating: h_rating}
       end
-
-
-      doc.css("div.bestListings").each do |card|
-      card.css(".student-card a").each do |student|
-        student_profile_link = "#{student.attr('href')}"
-        student_location = student.css('.student-location').text
-        student_name = student.css('.student-name').text
-        students << {name: student_name, location: student_location, profile_url: student_profile_link}
-      end
-    end
-
     end
 
     def self.scrape_on_ear
