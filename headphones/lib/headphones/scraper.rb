@@ -11,7 +11,6 @@ class Headphones::Scraper
         h_name = headphone.css("h5").text
         h_price = headphone.css(".price").text
         h_url = "https://www.cnet.com#{doc.css(".review").attribute("href").value}"
-
         h_rating = headphone.css(".subRatings")[0].attribute("aria-label").value
 
         in_ear_array << {name: h_name, price: h_price, url: h_url, rating: h_rating}
